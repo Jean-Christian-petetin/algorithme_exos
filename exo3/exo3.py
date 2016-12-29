@@ -1,4 +1,6 @@
-#cette algo trouve une lettre defini dans un mot et affiche le nombre de fois ou la lettre apparait dans le mot.
+#Cet algo trouve une lettre defini dans un mot et affiche le nombre de fois ou la lettre apparait dans le mot.
+# JesuScript
+# beweb
 
 word = "anticonstitutionnellement"
 char = "n"

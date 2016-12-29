@@ -1,16 +1,24 @@
-$word = "tacos sauce blanche"
-$carac = "a"
-$resultat = 0
-#initialisation de l'index donc index 0
-$i = 0
+#Cet algo trouve une lettre defini dans un mot et affiche le nombre de fois ou la lettre apparait dans le mot.
+# JesuScript
+# beweb
 
-#tant que index inferieur a la longueur du mot cela exectute le code ci-dessous
-while $i < $word.length
-	#si a l'index ou je me trouve c'est bien un "n" j'incremente de 1
-	if $word[$i] == $carac
-		$resultat += 1
+def countChar(word,char)
+	word = ARGV[0]
+	char = ARGV[1]
+	resultat = 0
+	i = 0
+
+	#tant que index inferieur a la longueur du mot cela exectute le code ci-dessous
+	while i < word.length
+		#si a l'index ou je me trouve c'est bien un "n" j'incremente de 1
+		if word[i] == char
+			resultat += 1
+		end
+	#et je passe a l'index suivant
+	i += 1
 	end
-#et je passe a l'index suivant
-$i += 1
+	print "Le nombre de #{char} dans #{word} est: #{resultat}\r\n"
+
 end
-print "Le nombre de caractereRecherche est : #{$resultat}\r\n"
+
+countChar(ARGV[0],ARGV[1])
